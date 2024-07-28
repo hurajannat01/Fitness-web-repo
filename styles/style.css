@@ -291,7 +291,7 @@
     width: 300px;
 }
 .third-describe{
-     width: 450px;
+    width: 450px;
     font-size: 12px;
     font-weight: 200;
     line-height: 24px;
@@ -313,6 +313,28 @@
     font-weight: 400;
     border: 1px solid #E6533C;
     border-radius: 30px;
-    background:#E6533C;
-    
+    background:#E6533C;    
+}
+/* Calculator part */
+.calculator-container {
+    margin-left: 350px; /* Adjust this value as needed to align with your design */
+}
+
+.calculator-title {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin: 0; /* Remove margin-right */
+}
+
+.calculator-describe {
+    width: 500px;
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    margin-top: 10px; /* Adjust as needed for spacing between title and description */
+    text-align: left;
 }
