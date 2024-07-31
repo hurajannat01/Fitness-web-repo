@@ -91,7 +91,6 @@
     max-width: 1440px;
 }
 .banner-title{
-    font-family: Inter;
     font-size: 70px;
     font-weight: 2000;
     line-height: 120%; 
@@ -101,7 +100,6 @@
     margin-top: 110px;
 }
 .banner-text {
-    font-family: 'Inter', sans-serif;
     font-size: 12px;
     font-weight: 400;
     line-height: 16px;
@@ -223,7 +221,7 @@
 .main-describe{
     color: rgba(255, 255, 255, 0.5);
     font-size: 12px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 24px;
     letter-spacing: 0.3px;
     text-align: center;
@@ -317,24 +315,105 @@
 }
 /* Calculator part */
 .calculator-container {
-    margin-left: 350px; /* Adjust this value as needed to align with your design */
+    margin-left: 350px;
 }
-
 .calculator-title {
     font-size: 40px;
     font-weight: 900;
     line-height: 120%;
     letter-spacing: 0%;
     text-align: left;
-    margin: 0; /* Remove margin-right */
+    margin: 0;
 }
-
 .calculator-describe {
     width: 500px;
     font-size: 12px;
     font-weight: 200;
     line-height: 24px;
     letter-spacing: 0.3px;
-    margin-top: 10px; /* Adjust as needed for spacing between title and description */
+    margin-top: 10px; 
     text-align: left;
+}
+.main-third{
+    background-color: #222222;
+    width: 1440px;
+    height: 450px;
+    display: flex;
+}
+.calculator-of-bmi{
+    display: flex;
+    gap: 200px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+.bmi-calculator{
+    margin-right: 100px;
+}
+/* section styles */
+.footer-sec{
+    background: rgba(255, 255, 255, 0.1);
+    width: 1440px;
+    height: 489px;
+    justify-content: space-between;
+    padding: 0 50px; 
+    margin-top: 100px;
+}
+
+.footer-cotainer{
+    margin-top: 50px;
+    margin-left: 120px; 
+    width: 400px;
+}
+.footer-title{
+    margin-top: 59px;
+    color: rgb(230, 83, 60);
+    font-size: 65px;
+    font-weight: 800;
+    line-height: 120%;
+    letter-spacing: 0%;
+}
+.footer-describe{
+    width: 400px;
+    font-size: 13px;
+    font-weight: 100;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+}
+/* fourth part */
+.fourth-title{
+    color: skyblue;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 120%;
+    letter-spacing: 0%;
+    margin-bottom: 10px;
+}
+   .fourth-image{
+    display: flex;
+    width: 1100px;
+    height: 600px;
+    margin: 70px auto;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    justify-content: space-between;
+    align-items: center;
+}
+.forth-image-container{
+    display: grid;
+    
+}
+
+.fourth-img-describe{
+    height: 200px;
+    width: 250px;
+}
+/* Footer Styles */
+.footer-cotainer{
+    display: flex;
+   justify-content: space-around;
+   padding: 20px 0;
+   width: 80%;
+   margin: auto;
 }
