@@ -29,7 +29,7 @@
     color: white;
 }
 .text-light-gray{
-    color:rgba(255, 255, 255, 0.5);;
+    color:rgba(255, 255, 255, 0.5);
 }
 /* navbar styles */
 .brand{
@@ -333,23 +333,111 @@
     margin-top: 10px; 
     text-align: left;
 }
-.main-third{
+/* chart and calculator stylels */
+.main-third {
     background-color: #222222;
     width: 1440px;
     height: 450px;
     display: flex;
-}
-.calculator-of-bmi{
-    display: flex;
-    gap: 200px;
-    text-align: center;
+    align-items: center;
     justify-content: center;
-    margin-top: 30px;
-    margin-right: 50px;
 }
-.bmi-calculator{
-    margin-right: 100px;
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 68%;
+    max-width: 1200px;
+    margin-left: -100px;
 }
+.bmi-chart, .bmi-calculator {
+    padding: 10px;
+    border-radius: 10px;
+    width: 45%;
+    margin-bottom: 100px;
+}
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 40px;
+}
+th,td{
+    border: 1px solid #444;
+    padding: 10px;
+    text-align: left;
+}
+td{
+    font-size: 13px;
+    font-weight: 200;
+    color: gainsboro ;
+    letter-spacing: 0.3;
+    line-height: 120%;
+}
+ .bmi-calculator-describe{
+    width: 80%;
+    max-width: 1000px;
+    font-size: 12px;
+}
+.
+/* Images part styles */
+.image-part {
+    background-color: #000; /* Dark background for the whole page */
+}
+
+.trainers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.1);
+    width: 1000px;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.trainer {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 12px;
+}
+
+.trainer-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7); /* Darken images for better text visibility */
+}
+
+.trainer-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.trainer-info h3 {
+    margin: 0;
+    font-size: 1.2em;
+    text-align: left;
+    margin-left: 10px;
+    /* color: #fff; */
+}
+
+.trainer-info p {
+    margin: 0;
+    font-size: 13px;
+    text-align: left;
+    margin-left: 10px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
 /* fourth part */
 .fourth-title{
     font-size: 30px;
