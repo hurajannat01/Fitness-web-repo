@@ -60,10 +60,11 @@
     text-align: left;
 }
 .nav-links{
-    padding: 5px;
+    padding: 4px;
     box-sizing: border-box;
     border: 1px solid rgba(255, 255, 255, 0.1); 
     border-radius: 39px;
+    margin-right: 80px;
 
 }
 /* button styles */
@@ -140,7 +141,7 @@
     background-color: transparent;
 }
 .background-image {
-    margin-left: 200px;
+    margin-left: 100px;
 }
 .overlay {
     position: relative;
@@ -175,6 +176,7 @@
     top: 440px;
     display: flex;
     align-items: center; 
+    margin-right: -90px;
 }
 .decoration{
     display: flex;
@@ -337,7 +339,7 @@
 .main-third {
     background-color: #222222;
     width: 1440px;
-    height: 500px;
+    height: 450px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -401,9 +403,9 @@ td{
     flex: 1;
     margin-right: 10px;
     border-radius: 8px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid #444;
     color: #FFFFFF99;
-    background: rgba(255, 255, 255, 0.1); 
+    background: rgba(255, 255, 255, 0.1);
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
