@@ -50,7 +50,6 @@
     margin-right: 30px;
     align-items: center;
 }
-
 .nav-link{
     text-decoration: none;
     font-size: 14px;
@@ -245,9 +244,7 @@
   justify-items: center;
   align-items: center;
   justify-items: center;
-
 }
-
 .image-title{
     width: 175px;
    font-size: 15px;
@@ -314,32 +311,11 @@
     border-radius: 30px;
     background:#E6533C;    
 }
-/* Calculator part */
-.calculator-container {
-    margin-left: 350px;
-}
-.calculator-title {
-    font-size: 40px;
-    font-weight: 900;
-    line-height: 120%;
-    letter-spacing: 0%;
-    text-align: left;
-    margin: 0;
-}
-.calculator-describe {
-    width: 500px;
-    font-size: 12px;
-    font-weight: 200;
-    line-height: 24px;
-    letter-spacing: 0.3px;
-    margin-top: 10px; 
-    text-align: left;
-}
 /* chart and calculator stylels */
 .main-third {
     background-color: #222222;
     width: 1440px;
-    height: 450px;
+    height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -417,10 +393,32 @@ td{
 .sex , .select{
     background-color: #444;
 }
+/* Image title part design */
+.calculator-container {
+    margin-left: 300px;
+}
+.calculator-title {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin: 0;
+}
+.calculator-describe {
+    width: 500px;
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    margin-top: 10px; 
+    text-align: left;
+}
+
 /* Images part styles */
 .image-part {
     background-color: #000; 
-}
+ |}
 .trainers {
     display: flex;
     flex-wrap: wrap;
@@ -479,20 +477,17 @@ td{
     padding: 0 50px; 
     margin-top: 100px;
 }
-
 .footer-container {
     display: flex;
     justify-content: space-around;
     width: 70%;
     margin: 25px 100px;
 }
-
 .footer-sec-two {
     width: 300px;
     height: 200px;
     margin-bottom: -10px;
 }
-
 .footer-title {
     margin-top: 59px;
     color: rgb(230, 83, 60);
@@ -501,7 +496,6 @@ td{
     line-height: 120%;
     letter-spacing: 0%;
 }
-
 .footer-describe {
     width: 400px;
     font-size: 13px;
@@ -509,7 +503,6 @@ td{
     line-height: 24px;
     letter-spacing: 0.3px;
 }
-
 .footer-heading {
     font-size: 28px;
     font-weight: 700;
@@ -518,7 +511,6 @@ td{
     margin: 70px 115px;
     width: 400px;
 }
-
 .footer-links {
     list-style: none;
     flex: none;
@@ -528,7 +520,6 @@ td{
     margin: 10px 80px;
     gap: 5px;
 }
-
 .footer-link {
     margin-top: 5px;
     position: static;
@@ -564,3 +555,124 @@ td{
     text-align: center;
 }
 
+/* Media Queries for Mobile Responsiveness */
+@media screen and (max-width: 576px) {
+    .hide{
+        display: none;
+    }
+    /* Change your habit section */
+    .title-part {
+        width: 100%;
+        margin: 20px 0;
+    }
+    .main-title {
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+    .main-describe {
+        font-size: 10px;
+        line-height: 20px;
+    }
+    .img-part {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 0 20px;
+    }
+    .circle-pic {
+        width: 50%;
+    }
+    .image-title {
+        width: 100%;
+        font-size: 14px;
+        margin-top: 15px;
+    }
+    .image-describe {
+        width: 100%;
+        font-size: 11px;
+        line-height: 12px;
+    }
+    /* bmi-chart part styles */
+    .main-two {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin: 45px auto;
+        padding: 18px;
+    }
+    .third-container {
+        margin-left: 0;
+        text-align: center;
+        width: 100%;
+    }
+    .title-third {
+        font-size: 24px;
+        width: 100%;
+    }
+    .third-describe {
+        width: 100%;
+        font-size: 10px;
+        line-height: 20px;
+        text-align: center;
+    }
+    .img-two {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+        text-align: center;
+    }
+    .btn-join {
+        width: 80%;
+        height: 40px;
+    }
+    .calculator-container {
+        padding: 20px;
+    }
+    .calculator-title {
+        font-size: 24px;
+    }
+    .calculator-describe {
+        font-size: 10px;
+        line-height: 20px;
+    }
+    .main-third {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-left: 0;
+    }
+    .bmi-chart {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    table {
+        width: 80%;
+    }
+    th, td {
+        padding: 8px;
+        font-size: 12px;
+    }
+    .bmi-calculator {
+        width: 100%;
+        margin: 20px 0;
+    }
+    .form-row {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .form-input.height, .form-input.weight,
+    .form-input.age, .form-input.sex {
+        width: calc(50% - 5px);
+    }
+
+    .form-input.full-width {
+        width: 70%;
+    }
+}

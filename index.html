@@ -7,9 +7,14 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body class="inter-font background">
-    <header class="bg-light">
+    <header class="bg-light hide">
          <nav class="navbar display-flex">
            <h2 class="brand"> <i>Fitness </i></h2>
+           <div class="hamburger" id="">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
            <ul class="nav-links display-flex">
             <!-- li.nav-items*4>a.nav-link -->
             <li class="nav-item"> <button class="btn-home"><a href="" class="nav-link text-gray">Home</a></button></li>
@@ -18,7 +23,7 @@
             <li class="nav-item"><a href="" class="nav-link text-gray">About</a></li>
            </ul>
          </nav>
-         <div class="banner">
+         <div class="banner hide">
             <div class="banner-container">
                 <h1 class="banner-title text-gray">Get body in <span class="dancing-script-font">shape</span> & stay healthy</h1>
                 <p class="banner-text text-light-gray">A huge selection of health and fitness content, healthy recipes and transformation stories to help you get fit and stay fit!</p>
@@ -54,10 +59,10 @@
     </header>   
 
     <main>
-    <section  class="title-part">
+    <div  class="title-part">
       <h1 class="main-title text-gray">Change Your Habits</h1>
-      <p class="main-describe text-light-gray">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
-    </section>
+      <p class="main-describe text-light-gray">Transform your life with our personalized fitness programs, designed to help you achieve your health goals. Join our community and start your journey to a healthier, happier you today!</p>
+    </div>
     
     <section class="img-part">
         <div class="img-div">
@@ -82,7 +87,7 @@
         </div>
     </section >
 
-     <section class="main-two ">
+     <section class="main-two">
         <div class="third-container">
             <h1 class="title-third text-gray">Run an Extra Mile Easily</h1>
             <p class="third-describe text-light-gray"> "Run an extra mile easily" means enhancing your cardiovascular endurance and overall stamina to the point where you can increase your running distance by an additional mile without significant difficulty. </p>
@@ -92,8 +97,8 @@
             <img class="img-two" src="images/run.jpg" alt="">
         </div>
      </section>
-      <section>>
-        <div class="calculator-container">
+      <section>
+        <div class="calculator-container hide">
             <h1 class="calculator-title text-gray">BMI Calculator</h1>
             <p class="calculator-describe text-light-gray">A BMI (Body Mass Index) calculator is a tool that helps determine whether a person has a healthy body weight for their height. It calculates BMI by dividing a person's weight in kilograms by the square of their height in meters (kg/m²).</p>
         </div>
@@ -131,9 +136,10 @@
                 <p class="third-describe text-light-gray">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
                 <form class="form-container">
                     <div class="form-row">
-                        <input class="form-input" type="text" id="height" placeholder="Height/cm">
-                        <input class="form-input" type="text" id="weight" placeholder="Weight/kg">
-                        <input class="form-input" type="text" id="age" placeholder="Age">
+                        <input class="form-input height" type="text" id="height" placeholder="Height/cm">
+                        <input class="form-input weight" type="text" id="weight" placeholder="Weight/kg">
+                        <br>
+                        <input class="form-input age" type="text" id="age" placeholder="Age">
                         <select class="form-input sex" id="sex">
                             <option value="">Sex</option>
                             <option value="male">Male</option>
@@ -151,14 +157,11 @@
             </div>
         </div>
     </section>
-    
-
-    <section class="title-part">
+    <section class="title-part hide">
         <h1 class="fourth-title text-gray">Meet Our Team</h1>
         <p class="main-describe text-light-gray">Our team is more than just a group of individuals; we are a community built on trust, respect, and mutual support. We believe in the power of teamwork and the importance of fostering a positive and inclusive work environment.</p>
-    </section>
-   
-    <section class="image-part">
+    </section> 
+    <section class="image-part hide">
         <div class="trainers">
             <div class="trainer">
                 <img class="trainer-img" src="images/trainer1.png" alt="Jerome Bell">
@@ -207,7 +210,7 @@
     </main>
 
     <footer>
-        <section class="footer-sec">
+        <section class="footer-sec hide">
             <div class="footer-container">
                 <div class="footer-sec-one">
                     <h1 class="footer-title"><i>Fitness</i></h1>
