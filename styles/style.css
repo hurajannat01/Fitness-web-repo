@@ -66,6 +66,21 @@
     margin-right: 80px;
 
 }
+.hamburger {
+    display: none; /* Hide hamburger by default */
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.hamburger span {
+    height: 2px;
+    width: 25px;
+    background-color: white;
+    margin-bottom: 4px;
+    border-radius: 5px;
+}
+
 /* button styles */
 .btn-home{
     width: 80px;
@@ -554,11 +569,74 @@ td{
     letter-spacing: 0.3px;
     text-align: center;
 }
-
 /* Media Queries for Mobile Responsiveness */
 @media screen and (max-width: 576px) {
-    .hide{
-        display: none;
+    /* navbar from header  */
+    .navbar {
+        padding: 0 20px;
+        margin: 0;
+    }
+
+    .banner {
+        flex-direction: column;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .banner-title {
+        font-size: 36px;
+        width: 70%;
+        margin-top: 50px;
+    }
+
+    .banner-text {
+        font-size: 14px;
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .btn-sec {
+        flex-direction: row;
+    }
+
+    .background-image {
+        width: 100%;
+        margin-left: 0;
+    }
+    .hamburger {
+        display: flex; 
+    }
+
+    .nav-links {
+        display: none; 
+    }
+    .overlay {
+        display: block;
+    }
+    .top-right {
+        text-align: center;
+        top: -550px;
+        left: 60%;
+        width: 130px;
+        height: 70px;
+    }
+    .sec-title {
+        font-size: 20px;
+    }
+    .text-describe {
+        font-size: 10px;
+        width: 100%;
+        white-space: nowrap;
+    }
+    .bottom-left {
+        top: -250px;
+        left: 10%;
+        width: 140px;
+        height: 60px;
+    }
+    .icon {
+        font-size: 28px;
+        margin-right: 5px;
     }
     /* Change your habit section */
     .title-part {
@@ -593,6 +671,19 @@ td{
         line-height: 12px;
     }
     /* bmi-chart part styles */
+    .calculator-container {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .calculator-title {
+        font-size: 24px;
+    }
+
+    .calculator-describe {
+        width: 100%;
+        font-size: 14px;
+    }
     .main-two {
         flex-direction: column;
         width: 100%;
@@ -674,5 +765,109 @@ td{
 
     .form-input.full-width {
         width: 70%;
+    }
+    .trainers {
+        width: 100%;
+        padding: 10px;
+        gap: 5px;
+    }
+
+    .trainer {
+        width: 100%;
+        height: auto;
+        margin: 5px 0;
+    }
+
+    .trainer:nth-child(1),
+    .trainer:nth-child(4) {
+        display: none;
+    }
+
+    .trainer-img {
+        height: 200px;
+    }
+
+    .trainer-info h3 {
+        font-size: 14px;
+    }
+
+    .trainer-info p {
+        font-size: 10px;
+    }
+    /* footer mobile responsive part */
+    .footer-sec {
+        width: 100%;
+        height: auto;
+        padding: 20px 10px;
+        margin-top: 50px;
+        background: rgba(255, 255, 255, 0.1); /* Same background color */
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    .footer-sec-one {
+        width: 100%;
+        margin: 20px 0;
+        text-align: left; 
+        padding-left: 10px; 
+    }
+
+    .footer-title {
+        font-size: 36px;
+        margin-top: 20px;
+    }
+
+    .footer-describe {
+        width: 90%;
+        margin: 10px 0;
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .footer-sec-two {
+        width: 100%;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .footer-heading {
+        font-size: 24px;
+        margin: 40px 0;
+        margin-top: -30px;
+    }
+
+    .footer-links {
+        margin: 0;
+        padding: 0;
+        gap: 0;
+    }
+
+    .footer-link {
+        font-size: 18px;
+        line-height: 100%;
+        margin-bottom: 8px;
+    }
+
+    .footer-line {
+        margin: 0px ;
+        width: 95%;
+        
+    }
+
+    .footer-bottom {
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+
+    .line-describe {
+        margin-top: 0px;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: left;
     }
 }
